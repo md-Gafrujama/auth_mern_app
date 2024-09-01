@@ -13,6 +13,8 @@ const ensureAuthenticated = (req, res, next) => {
     } catch (err) {
         return res.status(403)
             .json({ message: 'Unauthorized, JWT token wrong or expired' });
+
+            //Md Gafrujama Ansari
     }
 }
 
